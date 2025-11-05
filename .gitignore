@@ -3,31 +3,45 @@ venv/
 ENV/
 env/
 
-# Model files
-*.pkl
+# === Python virtual environments and env files ===
+# Local virtual environments
+.venv/
+venv/
+ENV/
+env/
 
-
-
-# Streamlit / Python cache
-__pycache__/
-*.py[cod]
-*.pyo
-.cache/
-
-.bak
-
-# Environments
+# Local env files
 .env
 .env.*
 !.env.example
 
-# Python
+# === Python/cache ===
 __pycache__/
+*.py[cod]
 *.pyc
 *.pyo
+.cache/
 
-# IDE
+# === Project caches and local outputs ===
+cache/
+data/*.csv
+data/*.json
+data/*.joblib
+models/*.joblib
+maps/
+
+# === IDE / OS ===
 .vscode/
 .idea/
 .DS_Store
+Thumbs.db
+
+# === Notebook checkpoints ===
+.ipynb_checkpoints/
+
+# === Logs ===
+*.log
+
+# === Misc ===
+.bak
 
